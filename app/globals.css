@@ -3,21 +3,30 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --color-10-percent: #0b2eaf;
-  --color-30-percent: #fff;
-  --color-60-percent: #000;
+  --nav-background: #f2e6e6;
+  --nav-foreground: #171717;
+}
+:root[data-theme="dark"] {
+  --background: #171717;
+  --foreground: #ffffff;
+  --nav-background: #222121;
+  --nav-foreground: #ffffff;
+}
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-Nav-background: var(--nav-background);
+  --color-Nav-foreground: var(--nav-foreground);
 }
 
-/* #0da28e	Moderno, profesional
-🔴 #ff4d4f	Activo, llamativo
-🟣 #7d5fff	Creativo, tech
-🟠 #f5a623	Energético y amigable
- #007bff */
-/*
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-  }
+/* @theme root[data-theme= "dark"]{
+  --color-background: #171717;
+  --color-foreground: #ffffff;
+  --color-Nav-background: #222121;
+  --color-Nav-foreground: #ffffff;
+}; */
+
+/* :root[data-theme="light"] {
 } */
 
 html,
@@ -26,8 +35,7 @@ body {
 }
 
 body {
-  color: var(--color-30-percent);
-  background: var(--color-60-percent);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html {
@@ -37,21 +45,11 @@ html {
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  /*   padding: 0;
+  margin: 0; */
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
-
-/* @theme {
-  --color-test: var(--color-10-percent);
-} */
