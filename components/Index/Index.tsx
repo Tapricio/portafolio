@@ -1,9 +1,7 @@
 export default function Index() {
   return (
-    <section>
-      <h1 className="bg-background bg-green-400 text-foreground">
-        dentro de Index
-      </h1>
+    <section className="text-center mx-auto bg-purple-500 w-[90%]">
+      <h1 className="text-5xl">Dentro de index</h1>
     </section>
   );
 }

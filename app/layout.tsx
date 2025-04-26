@@ -24,14 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="dark">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <nav>
-          <Nav />
-        </nav>
-        <main className="text-5xl w-full h-full bg-red-400 pt-[10vh]">
-          {children}
-        </main>
+    <html lang="en">
+      <body className="bg-background">
+        <Nav />
+
+        <main>{children}</main>
         <footer></footer>
       </body>
     </html>

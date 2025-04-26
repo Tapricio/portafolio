@@ -1,22 +1,11 @@
 @import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --nav-background: #f2e6e6;
-  --nav-foreground: #171717;
-}
-:root[data-theme="dark"] {
   --background: #171717;
   --foreground: #ffffff;
-  --nav-background: #222121;
-  --nav-foreground: #ffffff;
 }
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-Nav-background: var(--nav-background);
-  --color-Nav-foreground: var(--nav-foreground);
 }
 
 /* @theme root[data-theme= "dark"]{

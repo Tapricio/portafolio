@@ -1,4 +1,4 @@
-"Use client";
+"use client";
 import React, { useState } from "react";
 import { RxSun, RxMoon } from "react-icons/rx";
 

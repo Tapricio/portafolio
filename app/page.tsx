@@ -3,9 +3,8 @@ import Index from "@/components/Index/Index";
 
 export default function Home() {
   return (
-    <div>
+    <div className="w-[80%] mx-auto h-[5000px] bg-red-400 pt-[10vh]">
       <Index />
-      asd
     </div>
   );
 }
