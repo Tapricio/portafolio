@@ -28,7 +28,9 @@ export default function RootLayout({
       <body className="bg-background">
         <Nav />
 
-        <main>{children}</main>
+        <main className="pt-[10vh] w-[80%] mx-auto h-[5000px] text-foreground">
+          {children}
+        </main>
         <footer></footer>
       </body>
     </html>
