@@ -25,10 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-background">
+      <body className="bg-gradient-to-b from-black via-black  to-sky-950">
         <Nav />
 
-        <main className="pt-[10vh] w-[80%] mx-auto h-[5000px] text-foreground">
+        <main className="pt-[10vh] w-[80%] h-screen mx-auto text-foreground">
           {children}
         </main>
         <footer></footer>

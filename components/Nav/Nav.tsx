@@ -20,6 +20,9 @@ const Nav = () => {
         <li>
           <Link href={"/"}>Inicio</Link>
         </li>
+        <li>
+          <Link href={"/api_call_suspense"}>Api call con Suspense</Link>
+        </li>
         {/* <li>
           <ToggleBtn sizeBtn={"3vw"} />
         </li> */}
