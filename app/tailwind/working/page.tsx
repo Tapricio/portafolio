@@ -1,3 +1,4 @@
+import Test from "@/components/Test/Test";
 const working = () => {
   return (
     <>
@@ -5,6 +6,7 @@ const working = () => {
       <div className="grid grid-cols-[7fr_4fr] gap-4">
         <div className="bg-blue-200">Columna 1 (7fr)</div>
         <div className="bg-green-200">Columna 2 (4fr)</div>
+        <Test nombre="Patricio Torres xd" />
       </div>
     </>
   );
